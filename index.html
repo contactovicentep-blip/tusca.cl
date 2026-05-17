@@ -427,6 +427,180 @@ footer p{font-size:0.8rem;color:var(--gray)}
   </div>
 </section>
 
+
+<!-- FORMULARIO DE PEDIDO -->
+<section id="pedir" style="background:#f9fafb;padding:5rem 5%">
+  <div style="max-width:600px;margin:0 auto">
+    <p style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#0066ff;margin-bottom:0.6rem;text-align:center">Haz tu pedido</p>
+    <h2 style="font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;letter-spacing:-0.8px;line-height:1.2;margin-bottom:0.6rem;color:#111;text-align:center">Completa tu pedido<br>y te contactamos.</h2>
+    <p style="text-align:center;color:#6b7280;font-size:0.9rem;margin-bottom:2.5rem">Te escribimos por WhatsApp para confirmar y coordinar el pago.</p>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:20px;padding:2.5rem">
+      
+      <!-- Producto -->
+      <div style="background:#f0f9ff;border:1.5px solid #bfdbfe;border-radius:12px;padding:1.2rem;margin-bottom:2rem;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <p style="font-weight:600;font-size:0.95rem;color:#111">🐱 Fuente Bebedero para Mascotas</p>
+          <p style="font-size:0.82rem;color:#6b7280;margin-top:2px">Incluye filtro + bomba USB · Envío a todo Chile</p>
+        </div>
+        <div style="text-align:right">
+          <p style="font-size:1.3rem;font-weight:700;color:#111">$14.990</p>
+          <p style="font-size:0.75rem;color:#15803d;font-weight:600">✓ En stock</p>
+        </div>
+      </div>
+
+      <!-- Campos -->
+      <div style="display:flex;flex-direction:column;gap:1.2rem">
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div>
+            <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Nombre *</label>
+            <input id="f-nombre" type="text" placeholder="Tu nombre" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+          </div>
+          <div>
+            <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Apellido *</label>
+            <input id="f-apellido" type="text" placeholder="Tu apellido" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+          </div>
+        </div>
+
+        <div>
+          <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">WhatsApp / Teléfono *</label>
+          <input id="f-telefono" type="tel" placeholder="+56 9 XXXX XXXX" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+        </div>
+
+        <div>
+          <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Dirección de envío *</label>
+          <input id="f-direccion" type="text" placeholder="Calle, número, depto (si aplica)" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+        </div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div>
+            <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Ciudad *</label>
+            <input id="f-ciudad" type="text" placeholder="Ej: Santiago" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+          </div>
+          <div>
+            <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Región *</label>
+            <select id="f-region" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;background:#fff;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'">
+              <option value="">Seleccionar...</option>
+              <option>Arica y Parinacota</option>
+              <option>Tarapacá</option>
+              <option>Antofagasta</option>
+              <option>Atacama</option>
+              <option>Coquimbo</option>
+              <option>Valparaíso</option>
+              <option>Metropolitana de Santiago</option>
+              <option>O'Higgins</option>
+              <option>Maule</option>
+              <option>Ñuble</option>
+              <option>Biobío</option>
+              <option>La Araucanía</option>
+              <option>Los Ríos</option>
+              <option>Los Lagos</option>
+              <option>Aysén</option>
+              <option>Magallanes</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Método de pago preferido *</label>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.8rem">
+            <label id="pay-mp" style="border:1.5px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s">
+              <input type="radio" name="pago" value="Mercado Pago" onchange="selectPay('pay-mp')"> 
+              <span style="font-size:0.88rem;font-weight:500">💳 Mercado Pago</span>
+            </label>
+            <label id="pay-tf" style="border:1.5px solid #e5e7eb;border-radius:10px;padding:12px;display:flex;align-items:center;gap:10px;cursor:pointer;transition:all 0.2s">
+              <input type="radio" name="pago" value="Transferencia" onchange="selectPay('pay-tf')">
+              <span style="font-size:0.88rem;font-weight:500">🏦 Transferencia</span>
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <label style="display:block;font-size:0.82rem;font-weight:600;color:#374151;margin-bottom:6px">Nota adicional <span style="font-weight:400;color:#9ca3af">(opcional)</span></label>
+          <textarea id="f-nota" placeholder="Instrucciones especiales de entrega, horario, etc." rows="3" style="width:100%;padding:12px 14px;border:1.5px solid #e5e7eb;border-radius:10px;font-size:0.9rem;outline:none;font-family:inherit;resize:none;transition:border 0.2s" onfocus="this.style.borderColor='#0066ff'" onblur="this.style.borderColor='#e5e7eb'"></textarea>
+        </div>
+
+        <!-- Resumen -->
+        <div style="background:#f9fafb;border-radius:12px;padding:1.2rem;border:1px solid #e5e7eb">
+          <div style="display:flex;justify-content:space-between;margin-bottom:6px">
+            <span style="font-size:0.87rem;color:#6b7280">Fuente bebedero x1</span>
+            <span style="font-size:0.87rem;color:#111;font-weight:500">$14.990</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:10px">
+            <span style="font-size:0.87rem;color:#6b7280">Envío</span>
+            <span style="font-size:0.87rem;color:#15803d;font-weight:500">A coordinar</span>
+          </div>
+          <div style="border-top:1px solid #e5e7eb;padding-top:10px;display:flex;justify-content:space-between">
+            <span style="font-weight:700;font-size:0.95rem">Total</span>
+            <span style="font-weight:700;font-size:1.1rem;color:#111">$14.990</span>
+          </div>
+        </div>
+
+        <!-- BOTÓN ENVIAR -->
+        <button onclick="enviarPedido()" id="btn-submit" style="width:100%;background:#25d366;color:#fff;border:none;padding:16px;border-radius:10px;font-size:1rem;font-weight:600;cursor:pointer;transition:opacity 0.2s;font-family:inherit">
+          💬 Confirmar pedido por WhatsApp
+        </button>
+
+        <p style="text-align:center;font-size:0.78rem;color:#9ca3af">Te redirigiremos a WhatsApp con tu pedido pre-cargado. Sin cuentas, sin registros.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function selectPay(id) {{
+  document.getElementById('pay-mp').style.borderColor = '#e5e7eb';
+  document.getElementById('pay-mp').style.background = '#fff';
+  document.getElementById('pay-tf').style.borderColor = '#e5e7eb';
+  document.getElementById('pay-tf').style.background = '#fff';
+  document.getElementById(id).style.borderColor = '#0066ff';
+  document.getElementById(id).style.background = '#f0f9ff';
+}}
+
+function enviarPedido() {{
+  const nombre = document.getElementById('f-nombre').value.trim();
+  const apellido = document.getElementById('f-apellido').value.trim();
+  const telefono = document.getElementById('f-telefono').value.trim();
+  const direccion = document.getElementById('f-direccion').value.trim();
+  const ciudad = document.getElementById('f-ciudad').value.trim();
+  const region = document.getElementById('f-region').value;
+  const pago = document.querySelector('input[name="pago"]:checked');
+  const nota = document.getElementById('f-nota').value.trim();
+
+  if (!nombre || !apellido || !telefono || !direccion || !ciudad || !region || !pago) {{
+    alert('Por favor completa todos los campos obligatorios (*)');
+    return;
+  }}
+
+  const btn = document.getElementById('btn-submit');
+  btn.textContent = 'Enviando...';
+  btn.style.opacity = '0.7';
+
+  const msg = `🐱 *NUEVO PEDIDO — TUSCA*
+
+📦 *Producto:* Fuente bebedero para mascotas
+💰 *Precio:* $14.990
+
+👤 *Cliente:* ${{nombre}} ${{apellido}}
+📱 *Teléfono:* ${{telefono}}
+📍 *Dirección:* ${{direccion}}, ${{ciudad}}
+🗺️ *Región:* ${{region}}
+💳 *Pago:* ${{pago.value}}
+${{nota ? '📝 *Nota:* ' + nota : ''}}
+
+¡Quiero confirmar mi pedido! 🙌`;
+
+  const url = 'https://wa.me/56945993844?text=' + encodeURIComponent(msg);
+  window.open(url, '_blank');
+
+  setTimeout(() => {{
+    btn.textContent = '💬 Confirmar pedido por WhatsApp';
+    btn.style.opacity = '1';
+  }}, 2000);
+}}
+</script>
 <footer>
   <a href="#" class="footer-logo">Tusca<span>.</span></a>
   <div class="footer-links">
